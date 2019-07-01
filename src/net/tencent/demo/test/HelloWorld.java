@@ -33,5 +33,11 @@ public class HelloWorld {
 		System.out.println("a: " + a);
 		System.out.println("b: " + b);
 	}
+	
+	//内部类
+	private class InnerClass {
+		int id;
+		String speed;
+	}
 
 }
