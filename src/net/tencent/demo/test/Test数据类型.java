@@ -31,5 +31,28 @@ public class Test数据类型 {
 		short s4 = 0x3f;//十六进制
 		System.out.println("short min value: " + Short.MIN_VALUE);
 		System.out.println("short max value: " + Short.MAX_VALUE);
+		
+		
+		
+		int t1 = 1000;
+		int t2 = 0b0101;//二进制
+		int t3 = 034567;//八进制
+		int t4 = 0X9ef;//十六进制
+		int t5 = 'q';//查询对应的ASCII码表得到对应的int值
+		int t6 = '\u1234';//查询对应的ASCII码表得到对应的int值
+		int t7 = '\n';//查询对应的ASCII码表得到对应的int值
+		System.out.println("int min value:" + Integer.MIN_VALUE);//-2147483648
+		System.out.println("int max value:" + Integer.MAX_VALUE);//2147483647
+		
+		//隐式转换是自动进行的，从小房间搬到大房间，不会造成精度丢失
+		long g1 = 100;//首先内存开辟咯一个32位房间，住着100，然后自动把房间升级到64位，给到g1
+		//1000L java虚拟机认为它就是long型，直接给64位房间，不会隐式转换
+		long g2 = 1000L;//long型赋值一般会在后面加个L，表示告诉java虚拟机这是long类型，不会发生隐式转换
+		// 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+		// ---- ---- ---- ---- ---- ---- ---- ---- 0000 0000 0000 0000 0000 0000 0000 0000
+		//显式转换是手动进行的，也叫做强制转换，从大房间搬到小房间，会造成精度丢失
+		int w = (int) g1;//这样会造成精度丢失
+		System.out.println("long min value: " + Long.MIN_VALUE);//-9223372036854775808
+		System.out.println("long max value: " + Long.MAX_VALUE);//9223372036854775807
 	}
 }
