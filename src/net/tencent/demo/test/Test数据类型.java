@@ -54,5 +54,33 @@ public class Test数据类型 {
 		int w = (int) g1;//这样会造成精度丢失
 		System.out.println("long min value: " + Long.MIN_VALUE);//-9223372036854775808
 		System.out.println("long max value: " + Long.MAX_VALUE);//9223372036854775807
+		
+		
+		float f1 = 12;
+		//float f2 = 12.34;这种会报错原因是默认是double 64位，float是32位，有如下两种解决方法
+		float f2 = 12.34F;
+		float f3 = (float)1.23;//1.23默认是double需要强制转换
+		float f4 = 12.34E2F;
+		float f5 = '2';//隐式转换 '2'先转换成int再转换成float，自动进行
+		float f6 = '\u1234';//隐式转换 '\u1234'先转换成int再转换成float，自动进行
+		
+		double d1 = 123.45;
+		double d2 = 123;
+		double d3 = '2';
+		
+		int abc = (int)d1;
+		System.out.println("abc:" + abc);//123
+		//哪些情况自动转换：
+		//byte ---> short ---> int ---> long 
+		//byte ---> short ---> float ---> double
+		//char ---> float
+		//char ---> double 
+		
+		// 哪些情况需要强制转换？只要大房间搬到小房间就需要强制转换，就会丢失精度
+		
+		
+		
+		
+		
 	}
 }
