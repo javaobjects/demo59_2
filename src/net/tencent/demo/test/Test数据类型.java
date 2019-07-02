@@ -79,8 +79,24 @@ public class Test数据类型 {
 		// 哪些情况需要强制转换？只要大房间搬到小房间就需要强制转换，就会丢失精度
 		
 		
+		//char类型
 		
-		
+		/*
+		 * 单个字符用 char 类型表示，通常取值可为：
+		 *  英文字母、数字、转义序列、特殊字符等 
+		 *  Java中的字符占两个字节(16位)，
+		 *  因此可用十六进制编码形式表示
+		 * Java中的字符类型的值通常用单引号( ‘ ’ )括起来
+		 */
+		char c1 = 'c';
+		char c2 = '4';
+		char c3 = 0x123;//需要查询ASCII码表
+		char c4 = '\t';
+		char c5 = '问';
+		char c6 = '\u2345';//需要查询unicode码表
+		char c7 = 86;//需要查询ASCII码表
+		System.out.println("char min value: " + Character.MIN_VALUE);// (空格)
+		System.out.println("char max value: " + Character.MAX_VALUE);//?
 		
 	}
 }
