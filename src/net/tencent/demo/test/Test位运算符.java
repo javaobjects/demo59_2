@@ -21,5 +21,14 @@ public class Test位运算符 {
 		int c = 4;//100
 		int d = 6;//110
 		System.out.println(c & d);//4
+		
+		//|:逻辑或运算符（只有参加运算的两位都为0，|运算的结果才为0，否则为1)
+		int e = 5;//101
+		int f = 7;//111
+		          //111
+		System.out.println(e|f);
+		
+		
+		
 	}
 }
