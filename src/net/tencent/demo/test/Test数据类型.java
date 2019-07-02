@@ -98,5 +98,13 @@ public class Test数据类型 {
 		System.out.println("char min value: " + Character.MIN_VALUE);// (空格)
 		System.out.println("char max value: " + Character.MAX_VALUE);//?
 		
+		boolean temp1 = true;
+		boolean temp2 = false;
+		System.out.println("boolean true: " + Boolean.TRUE);
+		System.out.println("boolean false: " + Boolean.FALSE);
+		//常量一定是static类型 final类型
+		
+		//访问常量
+		System.out.println(TestUtil.COMPANY_NAME);
 	}
 }
