@@ -27,6 +27,16 @@ public class TestWhile循环 {
 		
 		System.out.println("1-10的奇数的和: "+sum2);
 		
+		//用for循环改写从1-100的所有奇数相加的和
+		int count = 0;//存放累加的和
+		for (int i = 0; i < 100 + 1; i++) {
+			if(i % 2 != 0) {
+				count += i;
+			}
+		}
+		System.out.println("1-100的奇数的和: "+count);
+		
+		
 		
 	}
 
