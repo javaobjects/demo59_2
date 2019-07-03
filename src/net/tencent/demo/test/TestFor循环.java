@@ -22,6 +22,17 @@ public class TestFor循环 {
 		}
 		
 		System.out.println("1-100的和： " + result);
+		
+		//需求：从200-300中找奇数，找到10个就可以了
+		int count = 0;
+		for (int i = 200; i <= 300; i++) {
+			if(i % 2 != 0) {
+				count++ ;
+				System.out.println(i);
+			}
+			if(count == 10) {
+				break;//打破打断，中断循环的意思 
+			}
+		}
 	}
-
 }
