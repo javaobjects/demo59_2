@@ -26,6 +26,12 @@ public class Test三元运算符 {
 		 */
 		int result = sex.equals("男") ? 1 : 0;
 		System.out.println("性别： " + result);
+		
+		int a = 5;
+		System.out.println(a/2);//2
+		System.out.println(a/2.0);//2.5
+		double b = 5.0;
+		System.out.println(b/2);
+		System.out.println(b/2.0);
 	}
-
 }
