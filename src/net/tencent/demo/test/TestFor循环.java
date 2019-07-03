@@ -34,5 +34,14 @@ public class TestFor循环 {
 				break;//打破打断，中断循环的意思 
 			}
 		}
+		//需求：找出1-100中的偶数，并打印输出
+		
+		for (int i = 0; i <= 100; i++) {
+			if(i % 2 != 0) {
+				continue;
+			}
+			System.out.println(i);
+		}
+
 	}
 }
